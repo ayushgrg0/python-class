@@ -21,7 +21,7 @@ print(type(content))
 content_dict = json.loads(content)
 print(type(content_dict))
 key_value_pairs = content_dict.items()  # dictionary method 'item'
-
+print(key_value_pairs)
 
 for key, value in key_value_pairs:
     print(key, value)
