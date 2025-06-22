@@ -1,6 +1,6 @@
 
 ''' r string
-reading how to handle a file /n
+reading how to handle a file \n
 printing a same data twice
  '''
 
