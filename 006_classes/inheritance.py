@@ -35,7 +35,6 @@ class Teacher:
         self.name = name
         Teacher.total_teacher += 1
 
-
     @classmethod
     def get_total_teacher(cls):
         return cls.total_teacher

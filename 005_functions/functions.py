@@ -44,7 +44,7 @@ def circle_area(radius, pi=3.14):     # default parameter
 print(circle_area(4, pi=4))    # keyword parameter
 
 
-perimeter = lambda a, b: 2 * (a + b)
+# perimeter = lambda a, b: 2 * (a + b)
 
 print(perimeter(4, 9))
 
