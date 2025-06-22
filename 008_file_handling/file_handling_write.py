@@ -9,3 +9,5 @@ fp.seek(0)
 lines = fp.readlines()
 for line in lines:
     print(line, end="")
+
+fp.close()
