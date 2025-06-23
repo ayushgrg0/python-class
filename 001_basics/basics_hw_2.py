@@ -1,21 +1,23 @@
 
-'''
+import random
+
+"""
 Q1. Unique Numbers Check
 
 Write a Python function that takes a sequence of numbers and determines whether all the
- numbers are different from each other.
-'''
+numbers are different from each other.
+"""
 
 
-def unique_string(data):
-    if len(data) == len(set(data)):
-        print("The value stored are unique!!")
-    else:
-        print("The value are not unique!!")
+# def unique_string(data):
+#     if len(data) == len(set(data)):
+#         print("The value stored are unique!!")
+#     else:
+#         print("The value are not unique!!")
 
 
-data = [1, 21, 25, 51, 15, 14, 5, 2, 2]
-unique_string(data)
+# data = [1, 21, 25, 51, 15, 14, 5, 2, 2]
+# unique_string(data)
 
 '''
 Q2. Random Even Number Generator
@@ -31,12 +33,15 @@ Sample Output:
 even_numbers = []
 
 
-for i in range(1, 20):
+for i in range(1, 100):
     if i % 2 == 0:
         even_numbers.append(i)
-        print(even_numbers)
+
     else:
         print(" ")
+
+even_numbers = random.sample(even_numbers, 10)
+print(even_numbers)
 
 '''
 Q3. Generate List 1 to 10
@@ -49,7 +54,7 @@ Sample Output:
 ['1', '2', '3', '4', '5', '6', '7', '8', '9']
 '''
 numbers = []
-for i in range(1, 11):
+for i in range(1, 10):
     numbers.append(i)
 
 print(numbers)
