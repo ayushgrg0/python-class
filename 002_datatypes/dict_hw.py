@@ -21,7 +21,7 @@ Write a Python script to merge two Python dictionaries.
 dic1 = {"Name": "Ram", "Age": 20}
 dic2 = {"Hooby": "Coding", "Height": 5.9}
 
-dic3 = dic1
+dic3 = dic1.copy()
 
 print(dic3)
 
