@@ -4,17 +4,9 @@ Q1. Calculate string length.
 Write a Python program to calculate the length of a string.
 '''
 
+data = "www.wikipedia.com"
+print(len(data))
 
-def calculate_string(data):
-    count = 0
-
-    for char in data:
-        count += 1
-
-    return count
-
-
-print(calculate_string("www.wikipedia.com"))
 
 '''
 Q2. Get a string from a given string where all occurrences of its first char have been

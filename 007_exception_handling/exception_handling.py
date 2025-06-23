@@ -5,28 +5,28 @@ Write a Python program that executes an operation on a list and handles an Index
 exception if the index is out of range.
 '''
 
-num = [1, 2, 3, 5, 6, 4]
+# num = [1, 2, 3, 5, 6, 4]
 
-index = int(input("Enter the index:"))
+# index = int(input("Enter the index:"))
 
+# try:
+#     result = num[index]
+#     print(result)
+# except IndexError:
+#     print("Error: Index out of range.")
+
+
+"""
+Q2. Handle FileNotFoundError Exception When Opening a File
+
+Write a Python program that opens a file and handles a FileNotFoundError exception if the file does not exist.
+"""
 try:
-    result = num[index]
-    print(result)
-except IndexError:
-    print("Error: Index out of range.")
-
-
-'''
-Q2. Handle ZeroDivisionError Exception
-
-Write a Python program to handle a ZeroDivisionError exception when dividing a number by zero.
-'''
-try:
-    num = int(input("Enter a number"))
-    result = 10 / num
-    print(f'The result is {result}')
-except ZeroDivisionError:
-    print("The division by zero operation is not allowed.")
+    fp = open(r"C:\Users\USER\OneDrive\Desktop\python-class\007_exception_handling\hello.txt", "r")
+    content = fp.read()
+    print(content)
+except FileNotFoundError as e:
+    print(f"The error is {e}")
 
 
 '''
