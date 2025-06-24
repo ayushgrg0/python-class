@@ -19,5 +19,6 @@ for word in words:
         counter_dict[word] = frequency + 1
     else:
         counter_dict[word] = 1
+        print(counter_dict)
 
 print(counter_dict)
