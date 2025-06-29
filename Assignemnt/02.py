@@ -1,13 +1,14 @@
 def display_menu():
-    print('''
+    print("""
 -------------------- Menu --------------------
             1. Display menu
             2. Display the fruit list
             3. Simple Calculator
             4.
             5. Guess the Number
+            6. About the temperature
 
-    ''')
+    """)
 
 
 '''
@@ -71,3 +72,23 @@ def guess():
             break
         else:
             print("That's not the number between 1 to 10")
+
+
+"""
+Question 5: Weather Advice
+Ask the user to input the current temperature (as a number). Then:
+
+If the temperature is above 30, print "It's hot! Wear sunglasses!"
+If the temperature is between 15 and 30 (inclusive), print "It's nice outside! Enjoy!"
+If the temperature is below 15, print "It's cold! Wear a jacket!"
+"""
+
+
+def temperature():
+    temp = int(input("Enter the current temperature :"))
+    if temp > 30:
+        print("It's hot! Wear sunglasses!")
+    elif temp >= 15 and temp <= 30:
+        print("It's nice outside! Enjoy!")
+    elif temp < 15:
+        print("It's cold! Wear a jacket!")
