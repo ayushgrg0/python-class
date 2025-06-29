@@ -1,4 +1,5 @@
 import os
+import random
 
 
 def display_menu():
@@ -146,3 +147,23 @@ def file_exists():
         print("Yes the file does exists!")
     else:
         print("The file doesn't exists!")
+
+
+"""
+Question 9: Random Compliment
+Create a list of 5 nice compliments (like "You are awesome!" or "Great job!").
+Use the random module (specifically random.choice()) to pick one compliment randomly and print it.
+"""
+
+
+def compliments():
+    nice_compliments = [
+        "You are awesome.",
+        "I'm grateful to know you.",
+        "You're a great listener.",
+        "I appreciate you",
+        "You light up the room",
+    ]
+
+    random_compliments = random.choice(nice_compliments)
+    print(f"Here is a random compliment for you {random_compliments}")
