@@ -7,6 +7,7 @@ def display_menu():
             4.
             5. Guess the Number
             6. About the temperature
+            7. Even or Odd
 
     """)
 
@@ -92,3 +93,20 @@ def temperature():
         print("It's nice outside! Enjoy!")
     elif temp < 15:
         print("It's cold! Wear a jacket!")
+
+
+"""
+Question 6: Even or Odd
+Ask the user to input a number.
+Use an if statement to check if the number is even or odd, and print the result.
+(Hint: A number is even if number % 2 == 0.)
+"""
+
+
+def even_or_odd():
+    user = int(input("Enter a number: "))
+
+    if user % 2 == 0:
+        print("The given data is an even number!")
+    else:
+        print("The given data is a odd number!")
