@@ -27,3 +27,26 @@ def fruits():
 
     my_fav_5_fruits.append('strawberry')
     print(f'The updated fruit list is {my_fav_5_fruits}')
+
+
+'''
+Question 2: Simple Calculator
+Ask the user to input two numbers (use input()). Then:
+
+Add the two numbers together and print the result.
+Multiply the two numbers and print the result.
+Make sure to convert the inputs to numbers (use float() or int()) so you can do math with them!
+'''
+
+
+def calculator():
+    num1 = int(input("Enter the 1st number: "))
+    num2 = int(input("Enter the 2nd number: "))
+
+    sum = num1 + num2
+    product = num1 * num2
+
+    print(f'The sum of the 2 numbers provided are: {sum}')
+    print(f'The product of the 2 numbers provided are: {product}')
+
+
