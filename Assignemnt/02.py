@@ -8,6 +8,7 @@ def display_menu():
             5. Guess the Number
             6. About the temperature
             7. Even or Odd
+            8. Display all the files
 
     """)
 
@@ -110,3 +111,19 @@ def even_or_odd():
         print("The given data is an even number!")
     else:
         print("The given data is a odd number!")
+
+
+"""
+Question 7: List Your Files
+Write a program that uses the os module to list all the files in the current folder (use os.listdir()).
+Print each file name on a new line.
+"""
+
+import os
+
+
+def files():
+    files = os.listdir()
+    # print(f"------------> 'Files in the current directory': {files}")
+    for file in files:
+        print(f"Files in the current directory: {file}")
