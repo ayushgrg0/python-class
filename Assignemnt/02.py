@@ -8,12 +8,15 @@ def display_menu():
             1. Display menu
             2. Display the fruit list
             3. Simple Calculator
-            4.
+            4. Counting stars
             5. Guess the Number
             6. About the temperature
             7. Even or Odd
             8. Display all the files
             9. Check if a File Exists
+            10. Print Random Compliments
+            11. Dice Roller
+            12. Exit
 
     """)
 
@@ -58,11 +61,16 @@ def calculator():
     print(f"The product of the 2 numbers provided are: {product}")
 
 
-# '''
-# Question 3: Counting Stars
-# Write a program that uses a for loop to print the numbers 1 to 10,
-# and for each number, print that many stars (*). For example, for the number 3, print ***.
-# '''
+"""
+Question 3: Counting Stars
+Write a program that uses a for loop to print the numbers 1 to 10,
+and for each number, print that many stars (*). For example, for the number 3, print ***.
+"""
+
+
+def counting_stars():
+    for i in range(1, 11):
+        print(f"{i}: {'*' * i}")
 
 
 """
@@ -166,4 +174,49 @@ def compliments():
     ]
 
     random_compliments = random.choice(nice_compliments)
-    print(f"Here is a random compliment for you {random_compliments}")
+    print(f"Here is a random compliment for you ----> {random_compliments}")
+
+
+"""
+Question 10: Dice Roller
+Write a program that simulates rolling a six-sided die. Use random.randint(1, 6)
+to pick a random number between 1 and 6. Ask the user how many times they want to roll the dice,
+then print the result of each roll.
+"""
+
+
+def dice_roller():
+    user_input = int(input("How many times do you want to roll the dice: "))
+    for i in range(user_input):
+        dice_roll = random.randint(1, 6)
+        print(f'Here are the result of the dice you rolled {dice_roll}')
+
+
+while True:
+    display_menu()
+
+    user_input = input("Enter your choice: ")
+    if user_input == "1":
+        display_menu()
+    elif user_input == "2":
+        fruits()
+    elif user_input == "3":
+        calculator()
+    elif user_input == "4":
+        counting_stars()
+    elif user_input == "5":
+        guess()
+    elif user_input == "6":
+        temperature()
+    elif user_input == "7":
+        even_or_odd()
+    elif user_input == "8":
+        files()
+    elif user_input == "9":
+        file_exists()
+    elif user_input == "10":
+        compliments()
+    elif user_input == "11":
+        dice_roller()
+    else:
+        break
