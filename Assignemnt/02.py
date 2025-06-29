@@ -1,3 +1,6 @@
+import os
+
+
 def display_menu():
     print("""
 -------------------- Menu --------------------
@@ -9,37 +12,38 @@ def display_menu():
             6. About the temperature
             7. Even or Odd
             8. Display all the files
+            9. Check if a File Exists
 
     """)
 
 
-'''
+"""
 Question 1: Favorite Fruit List
 Create a list of your 5 favorite fruits (as strings, like "apple" or "banana"). Then:
 
 Print the entire list.
 Print the first and last fruit in the list.
 Add a new fruit to the list using the append() method and print the updated list.
-'''
+"""
 
 
 def fruits():
-    my_fav_5_fruits = ['apple', 'banana', 'orange', 'mango', 'grape']
-    print(f'The list of fruits are: {my_fav_5_fruits}')
-    print(f'The 1st fruit is {my_fav_5_fruits[0]}, and the last fruit is {my_fav_5_fruits[-1]}')
+    my_fav_5_fruits = ["apple", "banana", "orange", "mango", "grape"]
+    print(f"The list of fruits are: {my_fav_5_fruits}")
+    print(f"The 1st fruit is {my_fav_5_fruits[0]}, and the last fruit is {my_fav_5_fruits[-1]}")
 
-    my_fav_5_fruits.append('strawberry')
-    print(f'The updated fruit list is {my_fav_5_fruits}')
+    my_fav_5_fruits.append("strawberry")
+    print(f"The updated fruit list is {my_fav_5_fruits}")
 
 
-'''
+"""
 Question 2: Simple Calculator
 Ask the user to input two numbers (use input()). Then:
 
 Add the two numbers together and print the result.
 Multiply the two numbers and print the result.
 Make sure to convert the inputs to numbers (use float() or int()) so you can do math with them!
-'''
+"""
 
 
 def calculator():
@@ -49,8 +53,9 @@ def calculator():
     sum = num1 + num2
     product = num1 * num2
 
-    print(f'The sum of the 2 numbers provided are: {sum}')
-    print(f'The product of the 2 numbers provided are: {product}')
+    print(f"The sum of the 2 numbers provided are: {sum}")
+    print(f"The product of the 2 numbers provided are: {product}")
+
 
 # '''
 # Question 3: Counting Stars
@@ -119,11 +124,25 @@ Write a program that uses the os module to list all the files in the current fol
 Print each file name on a new line.
 """
 
-import os
-
 
 def files():
     files = os.listdir()
     # print(f"------------> 'Files in the current directory': {files}")
     for file in files:
         print(f"Files in the current directory: {file}")
+
+
+"""
+Question 8: Check if a File Exists
+Ask the user to input a file name (like "myfile.txt"). Use the os module (specifically os.path.exists())
+to check if that file exists in the current folder. Print whether the file exists or not.
+"""
+
+
+def file_exists():
+    user_input = input("Enter the file name: ")
+    file_exists = os.path.exists(user_input)
+    if file_exists:
+        print("Yes the file does exists!")
+    else:
+        print("The file doesn't exists!")
