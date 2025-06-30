@@ -1,5 +1,5 @@
 '''
-Palindrome Check
+Question 2. Palindrome Check
 Create a function is_palindrome that takes a string and returns True if it is a palindrome
 (reads the same forwards and backwards), False otherwise. Ignore case and non-alphabetic characters.
 Example:
