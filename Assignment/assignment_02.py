@@ -70,7 +70,7 @@ and for each number, print that many stars (*). For example, for the number 3, p
 
 def counting_stars():
     for i in range(1, 11):
-        print(f"{i}: {'*' * i}")
+        print("*" * i)
 
 
 """
@@ -83,11 +83,11 @@ Keep asking until they enter a number in that range. Once they do, print "Great 
 def guess():
     while True:
         user = int(input("Enter a number between 1 to 10: "))
-        if user > 0 and user <= 10:
+        if user >= 1 and user <= 10:
             print("Great Choice!")
             break
         else:
-            print("That's not the number between 1 to 10")
+            print("That's not the number between 1 to 10. Try again!")
 
 
 """
@@ -148,10 +148,10 @@ to check if that file exists in the current folder. Print whether the file exist
 """
 
 
-def file_exists():
+def exists_file_check():
     user_input = input("Enter the file name: ")
-    file_exists = os.path.exists(user_input)
-    if file_exists:
+    # file_exists = os.path.exists(user_input)
+    if os.path.exists(user_input):
         print("Yes the file does exists!")
     else:
         print("The file doesn't exists!")
@@ -213,7 +213,7 @@ while True:
     elif user_input == "8":
         files()
     elif user_input == "9":
-        file_exists()
+        exists_file_check()
     elif user_input == "10":
         compliments()
     elif user_input == "11":
