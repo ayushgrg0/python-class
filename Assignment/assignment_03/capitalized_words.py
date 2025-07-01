@@ -16,6 +16,7 @@ the most straightforward and recommended method is to use the built-in str.title
 '''
 
 
+# Approach 1
 def capitalize_words(data):
     new_data = str.title(data)
     print(new_data)
@@ -23,3 +24,7 @@ def capitalize_words(data):
 
 capitalize_words("hello world")
 capitalize_words("python is fun")
+
+# Approach 2
+line = "my name is ayush gurung. i live in pokhara."
+print(line.title())
