@@ -13,7 +13,9 @@ Output: 9
 #     square = number ** 2
 #     return square
 
-square = lambda x: x * x
+# lambda is an anonyms function
+
+square = lambda num: num ** 2
 
 print(square(5))
 print(square(3))

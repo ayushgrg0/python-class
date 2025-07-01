@@ -14,10 +14,12 @@ Output: [10, 20]
 def double_list(value):
     new_lst = []
     for ele in value:
-        double_value = ele + ele
+        double_value = ele * 2
         new_lst.append(double_value)
     print(new_lst)
 
 
 double_list([1, 2, 3])
 double_list([5, 10])
+
+# Approach 2 

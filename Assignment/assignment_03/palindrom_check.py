@@ -25,3 +25,18 @@ def is_palindrome(txt):
 print(is_palindrome("Malayalam"))
 print(is_palindrome("A man a plan a canal Panama"))
 print(is_palindrome("Hello"))
+
+
+# Approach 2
+
+num = 12321
+
+num_copy = num
+
+reversed_num = 0
+
+while num > 0:
+    remainder = num % 10
+    reversed_num = reversed_num * 10 + remainder
+    number = num // 10
+print(f"{num_copy} is palindrom : {num_copy == reversed_num}")
