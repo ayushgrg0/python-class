@@ -15,9 +15,9 @@ returns `[2, 1, 4, 3]`, and `swap_pairs([1, 2, 3])` returns `[2, 1, 3]`. Use lis
 
 def swap_pairs(lst):
     for i in range(0, len(lst) - 1, 2):
-        lst[i], lst[i + 1] = lst[i + 1], lst[i]
-    return lst
+        current_index = i
+        next_index = i + 1
+        lst[current_index], lst[next_index] = lst[next_index], lst[current_index]
 
 
-print(swap_pairs([1, 2, 3, 4]))
-print(swap_pairs([1, 2, 3]))
+print(swap_pairs([1, 2, 3, 4, 5, 6]))
