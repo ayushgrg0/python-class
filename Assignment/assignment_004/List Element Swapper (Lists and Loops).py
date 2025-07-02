@@ -10,7 +10,8 @@ returns `[2, 1, 4, 3]`, and `swap_pairs([1, 2, 3])` returns `[2, 1, 3]`. Use lis
 # print(a, b)
 
 # # a, b = b, a
-# print(b, a)
+# print(b)
+# print(a)
 
 
 def swap_pairs(lst):

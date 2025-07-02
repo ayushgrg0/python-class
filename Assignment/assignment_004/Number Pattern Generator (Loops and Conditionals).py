@@ -11,3 +11,13 @@ For example, `number_pattern(4)` should print:
 ```
 Use nested loops and conditionals to check for odd numbers.
 """
+
+
+def pattern_generator(num):
+    for row in range(1, num + 1):
+        for column in range(1, row * 2, 2):
+            print(column, end=" ")
+        print()
+
+
+pattern_generator(5)

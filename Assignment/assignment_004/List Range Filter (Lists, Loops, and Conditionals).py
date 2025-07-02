@@ -8,6 +8,7 @@ Use list methods like `append()` and loops with conditionals.
 '''
 
 
+# cognitive complexity
 def filter_range(lst, min_val, max_val):
     new_lst = []
     for i in lst:
