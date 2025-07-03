@@ -15,13 +15,13 @@ and use an odd number of stars (1, 3, 5, etc.).
 
 num = 5
 for i in range(num):
-    #  print(f'Value of num ----> {num}')
-    #  print(f' Value of i ---> {i}')
-    spaces = num - i - 1
-    #  print(f'Value of spaces ----->  {spaces}')
-    stars = 2 * i + 1
-    #  print(f'Value of stars --> {stars}')
-    print(" " * spaces + stars * "*")
+   print(f'Value of num ----> {num}')
+   print(f' Value of i ---> {i}')
+   spaces = num - i - 1
+   print(f'Value of spaces ----->  {spaces}')
+   stars = 2 * i + 1
+   print(f'Value of stars --> {stars}')
+   print(" " * spaces + stars * "*")
 
 
 # print(" " * 5 + "-")
