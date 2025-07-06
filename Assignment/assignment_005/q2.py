@@ -12,6 +12,6 @@ Example Output:
 Hint: Decrease the number of stars from 5 to 1 as the row number increases.
 '''
 
-num = 6
-for row in range(num, 0, - 1):
-    print(row * "*")
+row = 5
+for i in range(row, 0, -1):
+    print("*" * i)

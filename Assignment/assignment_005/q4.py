@@ -10,9 +10,9 @@ Example Output:
     *
 '''
 
-num = 5
 
-for i in range(num):
-    stars = 2 * (num - i) - 1
-    spaces = i
-    print(" " * spaces + "*" * stars)
+row = 5
+for i in range(1, row + 1):
+    spaces = " " * i
+    stars = "*" * ((row * 2) - i)
+    print(spaces + stars)

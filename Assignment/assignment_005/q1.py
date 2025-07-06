@@ -14,6 +14,7 @@ Hint: Use a single for loop to control the number of stars in each row, increasi
 # a = "*"
 # print(a)
 
-num = 6
-for row in range(1, num):
-    print(row * "*")
+row = 5
+
+for i in range(1, row + 1):
+    print("*" * i)
